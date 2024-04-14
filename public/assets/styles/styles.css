@@ -7,16 +7,6 @@
     --secondary: rgb(12, 238, 178);
     --dark: rgb(33, 37, 47);
     --body: rgb(136, 136, 136);
-    --white: rgb(246, 240, 240);
-    --box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
     --white: rgb(246, 240, 240);/*si se altera esta linea, se altera la linea 46*/
     --box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
 }
@@ -31,11 +21,6 @@ html {
     scroll-behavior: smooth !important;
 }
 
-ul,
-nav {
-    list-style: none;
-}
-
 ul, nav {
     list-style: none;
 }
@@ -45,11 +30,6 @@ a {
     cursor: pointer;
     opacity: 0.9;
 }
-
-a:hover {
-    opacity: 1;
-}
-
 a:hover {
     opacity: 1;
 }
@@ -61,14 +41,6 @@ a.btn {
     font-weight: 800;
     text-align: center;
 }
-
-.card-effect {
-    box-shadow: var(--box-shadow);
-    background-color: #DFE5EF;
-    padding: 25px;
-    transition: all 0.35s ease;
-}
-
 .card-effect {
     box-shadow: var(--box-shadow);
     background-color:#DFE5EF ;
@@ -81,93 +53,233 @@ a.btn {
 }
 
 /*Section Common Styles*/
-section {
 section{
     padding-left: 0rem;
     margin-left: 0rem;
 }
 
 /*Header styles*/
-#header.navbar .container-fluid {
+#header.navbar .container-fluid
+{
+    background-color: rgb(255, 0, 0);
 }
-
-#header #language1 {
+#header #language1{
     padding-right: 3rem;
     color: #ffffff;
 }
-
-#header #language {
+#header #language{
     padding-left: 0.5rem;
     color: #00e7ff;
 }
-
-#header #switcher {
+#header #switcher{
     display: flex;
 }
-
-#header .form-switch {
+#header .form-switch{
     align-items: flex-end;
 }
-
-/*Stretch the size of the logo*/
-#header .navbar .container-fluid .navbar-brand img {
+/*Aqui se estiliza el tamaño del logo*/
+#header .navbar .container-fluid .navbar-brand img{
     width: 35px;
     height: 31px;
 }
 
 
 /**/
-#header .navbar {
+#header .navbar{
     display: flex;
     background-color: #21252f;
     border-bottom: 1px solid rgb(33, 37, 47);
     position: sticky;
     box-shadow: var(--box-shadow);
 }
-
 #header .navbar .navbar-brand {
     font-size: 25px;
     padding-left: 3rem;
 }
-
-#header .language {
+#header .language{
     padding-left: 7rem;
 }
-
-#header .form-switch {
+#header .form-switch{
     display: flex;
 }
 
-#header .nav-item span {
-    padding-left: 1px;
+#header .nav-item span{
+    padding-left:1px;
     padding-right: 3rem;
     color: #ffffff;
 }
-
-#header .container-button .toggle.active {
+#header .container-button .toggle.active{
     background: #ffffff;
 }
-
-#header .container-button .toggle.active .toggle-button {
-    Left: 35px;
+#header .container-button .toggle.active .toggle-button{
+    Left:35px;
 }
-
-#header .container-button .toggle .text {
+#header .container-button .toggle .text{
     color: rgb(255, 255, 255);
     position: absolute;
-    top: 3px;
-    Left: 70px
+    top:3px;
+    Left:70px
+
 }
-
-#header .switch .container {}
-
+#header .switch .container{
+}
 #header .form-check-input {
     width: 50px;
     height: 25px;
     transition: 0.3s;
 }
+/* hero section */
+@media (max-width: 992px) {
+    .order-1 {
+        order: 2;
+    }
+    .order-2 {
+        order: 1;
+    }
+}
+
+
+
+
+#hero{
+    background-color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+}
+#hero .container .card-group #card-center .card-body{
+    background-color: #DFE5EF;
+    color: rgb(27, 23, 23);
+}
+#hero .container .card-group .card-body{
+    background-color:#000000;
+    color: #f5f5f5;
+}
+#hero #home .row button{
+    background-color: #0D6EFD;
+}
+#hero span{
+    display: flex;
+    width: 200px;
+    height: 50px;
+}
+#hero .callTo-Buttons{
+    cursor: pointer;
+}
+
+
+/* Estilo para aumentar el tamaño de las imágenes en la sección del héroe */
+#hero .callTo-Buttons {
+    width: 200px; /* Ancho deseado */
+    height: 200px; /* Mantener la proporción de aspecto original */
+}
+
+
+#hero .callTo-Buttons-container {
+    margin-top: 20px; 
+}
+
+
+#hero .order-lg-2{
+    width: 50%;
+    height: 100%;
+
+
+
+}
+
+#hero .my-image {
+    width: 100%;
+    height: 100%;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
+    margin: -50px 20px 0px 0px;
+
+
+  
+}
+
+
+
+
+/*AboutUs styles*/
+#Us .embed-responsive {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+#about-us {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+}
+#Us .container .row ul li span{
+    padding-left: 1rem;
+}
+#Us .container .row ul li span::before{
+    padding-left: 1rem;
+}
+#Us .container .row ul li span::after{
+    padding-left: 1rem;
+}
+/*AboutTheTeam styles*/
+
+#about-team .container .row .team-member img{
+    width: 125px;
+    height: 125px;
+    border-radius: 100px;
+    
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+
+#about-team .container .row .team-member .social-icons a{
+    width: 34px;
+    height: 34px;
+    background-color: var(--primary);
+    border-radius: 2px solid var(--primary);
+    color: var(--dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    margin-left: 5px;
+    transition: all 0.4s ease;
+    border: 2px solid var(--primary);
+}
+
+.social-icons a:hover {
+    color: var(--primary);
+    background-color: transparent;
+    border-color: var(--primary);
+}
+#about-team .embed-responsive {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+   
+}
+
+
+.team-member {
+    background-color: white;
+    width: 180px;
+    margin: 100px;
+
+}
+
+
+
+
+#Us iframe {
+
+}
+
 /*Services styles*/
 
+#services .row {
     margin-top: 5rem;
 }
 #services .container{
@@ -268,6 +380,7 @@ section{
     height: auto;
 
 }
+
 /*Pricing styles*/
 
 
@@ -291,4 +404,57 @@ section{
     margin-inline-start: auto;
     margin-inline-end: auto;
     overflow: hidden;
+}
+
+/*Contact Styles*/
+/*TODO: Implement contact styles*/
+#contact-Us .container{
+    padding-top: 5rem;
+}
+#contact-Us .container form .col-md-10 button{
+    height: 50px;
+    border-color: rgb(36, 41, 51);
+    color: rgb(246, 240, 240);
+    background-color: rgb(33, 37, 47);
+}
+#contact-Us .container form .col-md-10 button:hover{
+    background-color: rgb(48, 56, 65);
+}
+#contact-Us #EnterMessage{
+    color: var(--body);/*si se altera esta linea, se altera la linea 372,379,387*/
+}
+
+/*Footer styles*/
+#footer{
+    padding-top: 5rem;
+}
+#footer .footer-top {
+    color:var(--body);
+    padding-top: 20px;
+    padding-bottom: 40px;
+    background-color: var(--dark);
+}
+
+#footer .footer-top a {
+    color: var(--body);
+}
+
+#footer .footer-top a:hover {
+    color: var(--white);
+}
+
+#footer .footer-bottom {
+    color:var(--body);
+    background-color: rgba(33, 37, 47, 0.97);
+}
+#footer .logo-foot {
+    width: 15%;
+}
+#footer .App-name{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+#footer .social-icons a{
+    padding-left: 1rem;
 }
