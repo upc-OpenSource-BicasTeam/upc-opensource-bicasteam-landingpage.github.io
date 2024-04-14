@@ -1,3 +1,7 @@
+/*General Fonts Imports*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Quicksand&display=swap');/*colocamos el estilo de letra*/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');/*colocamos los iconos*/
+/*General Common Styles*/
 :root {
     --primary: rgb(88, 252, 209);
     --secondary: rgb(12, 238, 178);
@@ -13,6 +17,14 @@
     box-sizing: border-box;
 }
 
+    --white: rgb(246, 240, 240);/*si se altera esta linea, se altera la linea 46*/
+    --box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
 html {
     font: normal 16px sans-serif;
     color: #07dffd;
@@ -24,6 +36,9 @@ nav {
     list-style: none;
 }
 
+ul, nav {
+    list-style: none;
+}
 a {
     text-decoration: none;
     color: inherit;
@@ -35,6 +50,9 @@ a:hover {
     opacity: 1;
 }
 
+a:hover {
+    opacity: 1;
+}
 a.btn {
     color: rgb(5, 248, 183);
     border-radius: 4px;
@@ -51,6 +69,12 @@ a.btn {
     transition: all 0.35s ease;
 }
 
+.card-effect {
+    box-shadow: var(--box-shadow);
+    background-color:#DFE5EF ;
+    padding: 25px;
+    transition: all 0.35s ease;
+}
 .card-effect:hover {
     box-shadow: none;
     transform: translateY(5px);
@@ -58,13 +82,13 @@ a.btn {
 
 /*Section Common Styles*/
 section {
+section{
     padding-left: 0rem;
     margin-left: 0rem;
 }
 
 /*Header styles*/
 #header.navbar .container-fluid {
-    background-color: rgb(255, 0, 0);
 }
 
 #header #language1 {
@@ -141,4 +165,106 @@ section {
     width: 50px;
     height: 25px;
     transition: 0.3s;
+}
+/*Services styles*/
+
+    margin-top: 5rem;
+}
+#services .container{
+    width: 100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+}
+#services h5{
+    text-transform: uppercase;
+    size-adjust: auto;
+    color: rgb(136, 136, 136);
+}
+#services p{
+    color: rgb(136, 136, 136);
+}
+
+#services li{
+    color: rgb(136, 136, 136);
+}
+#services .texts{
+    justify-content: flex-start;
+
+}
+#services .texts h4{
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+    font-weight: 900;
+}
+#services .texts h1{
+    font-weight: 500;
+}
+#services .texts p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    color: rgb(234, 12, 12);
+    font-size: 16px;
+    padding: 3rem 1rem 3rem 1rem;
+    max-width: 330px;
+    text-transform: uppercase;
+}
+#services span{
+    display: flex;
+    width: 200px;
+    height: 50px;
+}
+#services .texts .callTo-Buttons{
+    height: 100%;
+    width: 100%;
+}
+#services .image-app{
+    justify-content: flex-end;
+}
+#services .routes{
+    margin-top: 2rem;
+    width: 100%;
+    height: auto;
+    background-color: #DFE5EF;
+}
+#services .maintain{
+    background-color: #DFE5EF;
+}
+#services .image-left{
+    margin: 2rem;
+}
+#services .container-texts{
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+    height:400px;
+}
+#services .container-texts h5{
+    margin-top: 1rem;
+    margin-bottom:1rem;
+}
+#services .container-texts h1{
+    font-size: 25px;
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+}
+#services .container-texts p{
+    font-size: 20px;
+}
+#services ul{
+    padding-top: 1rem;
+    list-style: none;
+}
+#services li i{
+    color: #757575;
+    padding-right: 1rem;
+    padding-bottom: .5rem;
+}
+#services .calls .container .container-texts{
+    width: 500px;
+}
+#services .calls .container .image-calls img{
+    padding: 1rem;
+    width: 300px;
+    height: auto;
+
 }
